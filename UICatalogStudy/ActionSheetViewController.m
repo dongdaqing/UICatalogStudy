@@ -8,20 +8,25 @@
 
 #import "ActionSheetViewController.h"
 
-@interface ActionSheetViewController ()
+typedef NS_ENUM(NSInteger, AAPLActionSheetsViewControllerTableRow) {
+    AAPLAlertsViewControllerActionSheetRowOkayCancel = 0,
+    AAPLAlertsViewControllerActionSheetRowOther
+};
+
+@interface ActionSheetViewController ()<UIActionSheetDelegate>
 
 @end
 
 @implementation ActionSheetViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+//- (id)initWithStyle:(UITableViewStyle)style
+//{
+//    self = [super initWithStyle:style];
+//    if (self) {
+//        // Custom initialization
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad
 {
