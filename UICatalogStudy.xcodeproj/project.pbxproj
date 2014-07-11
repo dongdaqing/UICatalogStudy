@@ -20,6 +20,7 @@
 		4C9FEDEE196FEBC800AB17C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FEDEC196FEBC800AB17C7 /* InfoPlist.strings */; };
 		4C9FEDF0196FEBC800AB17C7 /* UICatalogStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FEDEF196FEBC800AB17C7 /* UICatalogStudyTests.m */; };
 		4C9FEDFA196FEBD700AB17C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FEDF9196FEBD700AB17C7 /* Main.storyboard */; };
+		4C9FEDFF196FF67200AB17C7 /* ActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FEDFE196FF67200AB17C7 /* ActionSheetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		4C9FEDED196FEBC800AB17C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C9FEDEF196FEBC800AB17C7 /* UICatalogStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICatalogStudyTests.m; sourceTree = "<group>"; };
 		4C9FEDF9196FEBD700AB17C7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4C9FEDFD196FF67200AB17C7 /* ActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetViewController.h; sourceTree = "<group>"; };
+		4C9FEDFE196FF67200AB17C7 /* ActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +112,12 @@
 		4C9FEDD0196FEBC800AB17C7 /* UICatalogStudy */ = {
 			isa = PBXGroup;
 			children = (
+				4C9FEDFC196FF60D00AB17C7 /* View Controllers */,
+				4C9FEDFB196FF55E00AB17C7 /* Application */,
 				4C9FEDD9196FEBC800AB17C7 /* AppDelegate.h */,
 				4C9FEDDA196FEBC800AB17C7 /* AppDelegate.m */,
 				4C9FEDDC196FEBC800AB17C7 /* Images.xcassets */,
 				4C9FEDD1196FEBC800AB17C7 /* Supporting Files */,
-				4C9FEDF9196FEBD700AB17C7 /* Main.storyboard */,
 			);
 			path = UICatalogStudy;
 			sourceTree = "<group>";
@@ -145,6 +149,23 @@
 				4C9FEDEC196FEBC800AB17C7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C9FEDFB196FF55E00AB17C7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4C9FEDF9196FEBD700AB17C7 /* Main.storyboard */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		4C9FEDFC196FF60D00AB17C7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C9FEDFD196FF67200AB17C7 /* ActionSheetViewController.h */,
+				4C9FEDFE196FF67200AB17C7 /* ActionSheetViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +266,7 @@
 			files = (
 				4C9FEDDB196FEBC800AB17C7 /* AppDelegate.m in Sources */,
 				4C9FEDD7196FEBC800AB17C7 /* main.m in Sources */,
+				4C9FEDFF196FF67200AB17C7 /* ActionSheetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +463,7 @@
 				4C9FEDF5196FEBC800AB17C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C9FEDF6196FEBC800AB17C7 /* Build configuration list for PBXNativeTarget "UICatalogStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +472,7 @@
 				4C9FEDF8196FEBC800AB17C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
